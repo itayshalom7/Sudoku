@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sudoku.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="loginPage" class="content-wrapper login-wrap">
+            <h1>Suduko</h1>
+            <input class="login" type="text" name="username" id="Username" placeholder="Username"><br>
+            <input class="login" type="password" name="Password" id="Password" placeholder="Password"> <br>
+            <button onclick="login()">Log-in</button>
+        </div>
+        <div id="hardnessPage" class="content-wrapper hardness-wrap" style="visibility: hidden">
+            <button class="cal" onclick="thePlayerChooseHardness(75)">Easy</button>
+            <button class="cal" onclick="thePlayerChooseHardness(50)">Medium</button>
+            <button class="cal" onclick="thePlayerChooseHardness(25)">Hard</button>
+        </div>
+        <div id="sudokuPage" class="content-wrapper sudoku-wrap" style="visibility: hidden">
+            <table id="board" class="board">
+            </table>
+            <br>
+            <div class="pallet">
+                <a onclick="setNumber(1)">1</a>
+                <a onclick="setNumber(2)">2</a>
+                <a onclick="setNumber(3)">3</a>
+                <a onclick="setNumber(4)">4</a>
+                <a onclick="setNumber(5)">5</a>
+                <a onclick="setNumber(6)">6</a>
+                <a onclick="setNumber(7)">7</a>
+                <a onclick="setNumber(8)">8</a>
+                <a onclick="setNumber(9)">9</a>
+            </div>
+            <div class="options">
+                <button onclick="options(0)">clear</button>
+                <button onclick="options(1)">new board</button>
+                <button onclick="checkIfFilledUpCorrectly()">submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="Sudoku.js"></script>

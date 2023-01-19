@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+td{
+  font-size: medium;
+}
+/*********Page wrapper*********/
+.wrapper {
+  background-image: url("Basta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+}
+/*********div wrapper*********/
+
+.content-wrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 30%;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.login-wrap {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+  height: 60%;
+  top: 10%;
+}
+
+.hardness-wrap {
+  justify-content: space-around;
+  border-radius: 20px;
+  height: 10%;
+  top: 35%;
+}
+
+/*********change input and placeholder*********/
+
+.login,
+.login::placeholder {
+  background-color: gray;
+  width: 60%;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+/*********menu buttons*********/
+
+.login-wrap button,
+.hardness-wrap button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+}
+
+.login-wrap button:hover,
+.hardness-wrap button:hover {
+  font-weight: bold;
+}
+
+.login-wrap button:active,
+.hardness-wrap button:active {
+  transform: translate(0, 4px);
+}
+
+.sudoku-wrap {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15%;
+  padding: 40px;
+  background-color: rgba(240, 248, 255, 0.218);
+  height: 60%;
+  top: 10%;
+}
+/*********table css*********/
+
+.board {
+  color: black;
+  border-collapse: collapse;
+}
+/*********number border*********/
+
+.board td {
+  border: 1px solid black;
+}
+/*********3x3 border*********/
+
+.board tr:nth-child(3n + 0) {
+  border-bottom: 3px solid black;
+}
+.board tr:nth-child(1) {
+  border-top: 3px solid black;
+}
+
+.board td:nth-child(3n + 0) {
+  border-right: 3px solid black;
+}
+.board td:nth-child(1) {
+  border-left: 3px solid black;
+}
+/*********number choice div*********/
+
+.pallet {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width: 70%;
+  font-size: x-large;
+}
+
+/*********options buttons*********/
+
+.options button {
+  background: transparent;
+  font-size: medium;
+}
